@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <head>
+        <title>Pagina Principala</title>
+
+        <meta charset="UTF-8">
+
+        <link rel="icon" type="image/jpeg" href="iconita.jpeg">
+        <link rel="stylesheet" href="pagprinc.css">
+        <script src="filme.js"></script>
+    </head>
+
+    <body>
+        
+        <header id="inceput">
+            <div id="container_header">
+                <img src="iconita.jpeg" alt="icon">
+
+                <h2>Fa-ti propriul costum de Halloween!</h2>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="meniu">
+                <li><a href="PaginaPrincipala.html">Acasa</a>
+                    <ul class="submeniu">
+                        <li><a href="#materiale">Materiale</a></li>
+                        <li><a href="#confectionare">Confectionare</a></li>
+                        <li><a href="#filme">Recomandare Filme</a></li>
+                    </ul>
+                </li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="Evenimente.html">Evenimente</a></li>
+                <li><a href="Recenzii.html">Recenzii</a></li>
+            </ul>
+        </nav>
+
+        <section id="text_introductiv">
+            <p>Halloween-ul se apropie, iar anul asta iti vom arata cum sa iti confectionezi propriul tau costum!
+            </p>
+        </section>
+
+        <section id="materiale">
+            <h2>Astazi ne vom costuma ca Freddy Krueger din faimosul film "Nightmare on Elm Street"!</h2>
+            <h2>Materialele necesare pentru costum sunt:</h2>
+
+            <ul>
+                <li>Palarie (de preferat de culoare maro)</li>
+                <li>Tricou</li>
+                <li>Spray-vopsea de culoare verde si rosu</li>
+                <li>Marker negru</li>
+                <li>Manusa pentru mana dreapta</li>
+                <li>Lame/Gheare false</li>
+                <li>Lipici</li>
+            </ul>
+        </section>
+
+        <section id="confectionare">
+            <h2>Pasi de confectionare:</h2>
+            
+            <ol>
+                <li>Folosind marker-ul negru, personalizeaza-ti palaria pe placul tau! Este recomandat sa faci palaria sa arate invechita.</li>
+                <li>Vopseste tricoul urmand un model in dungi, folosind in mod alternativ vopseaua rosie cu cea verde.</li>
+                <li>Ataseaza ghearele false de manusa utilizand lipiciul.</li>
+            </ol>
+
+            <p>Felicitari, ai terminat costumul! Mai jos este o poza reprezentand cum ar trebui sa arate costumul.</p>
+        
+            <img src="costum.png" alt="costum_finalizat">
+        </section>
+
+        <section id="filme">
+            <h2>Recomandari de filme de vizionat de Halloween:</h2>
+            <section id="lista_filme">
+                <a href="https://www.imdb.com/title/tt0084787" target="_blank">
+                    <img src="thething.jpeg" alt="the_thing">
+                </a>
+                <a href="https://www.imdb.com/title/tt0077651" target="_blank">
+                    <img src="halloweenmovie.jpeg" alt="halloween">
+                </a>
+                <a href="https://www.imdb.com/title/tt1259521" target="_blank">
+                    <img src="cabin.jpeg" alt="cabin_in_the_woods">
+                </a>
+                <a href="https://www.imdb.com/title/tt0387564" target="_blank">
+                    <img src="saw.jpeg" alt="saw">
+                </a>
+            </section>
+        </section>
+
+        <div id="container_recomandare">
+            <form id="recomandareForm" method="GET">
+                <input id="titlu" name="titlu" type="text" placeholder="Titlul filmului (Optional)">
+                <input id="an" name="an" type="number" placeholder="An lansare (Optional)" min="1980" max="2024" style="width: 200px;">
+                <button id="recomandare">Apasa pentru o recomandare!</button>
+            </form>
+
+
+            <div id="rezultat"></div>
+        </div>
+        
+        <footer>
+            <p>Doresti sa contribui la acest site?</p>
+            <p>Contacteaza-ne la 0789 314 142 si lasa-ti amprenta pe acest Halloween!</p>
+        </footer>
+    </body>
+
+</html>

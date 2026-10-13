@@ -1,0 +1,26 @@
+[
+    {
+        "nume": "Corpse Bride",
+        "rating": "7.4/10",
+        "an": "2005",
+        "url": "https://www.imdb.com/title/tt0121164/"
+    },
+    {
+        "nume": "Skinamarink",
+        "rating": "4.7/10",
+        "an": "2022",
+        "url": "https://www.imdb.com/title/tt21307994/"
+    },
+    {
+        "nume": "Monster House",
+        "rating": "6.7/10",
+        "an": "2006",
+        "url": "https://www.imdb.com/title/tt0385880/"
+    },
+    {
+        "nume": "Friday the 13th",
+        "rating": "6.4/10",
+        "an": "1980",
+        "url": "https://www.imdb.com/title/tt0080761/"
+    }
+]

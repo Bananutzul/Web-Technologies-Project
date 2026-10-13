@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recenzii</title>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="recenzii.css">
+        <link rel="icon" type="image/jpeg" href="iconita.jpeg">
+        <script src="halloween.js"></script>
+    </head>
+
+    <body>
+        <header id="inceput">
+            <div id="container_header">
+                <img src="iconita.jpeg" alt="icon">
+
+                <h2>Fa-ti propriul costum de Halloween!</h2>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="meniu">
+                <li><a href="PaginaPrincipala.html">Acasa</a>
+                    <ul class="submeniu">
+                        <li><a href="#materiale">Materiale</a></li>
+                        <li><a href="#confectionare">Confectionare</a></li>
+                        <li><a href="#filme">Recomandare Filme</a></li>
+                    </ul>
+                </li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="Evenimente.html">Evenimente</a></li>
+                <li><a href="Recenzii.html">Recenzii</a></li>
+            </ul>
+        </nav>
+
+        <section id="text_introductiv">
+            <p>Mai jos sunt cateva recenzii de la utilizatorii acestui site!
+            </p>
+        </section>
+
+        <div id="container">
+            <section>
+                <p>⭐️⭐️⭐️⭐️⭐️</p>
+                <p>Am găsit aici o grămadă de idei super creative! Mi-am făcut costumul de vrăjitoare din lucruri pe care deja le aveam prin casă. Instrucțiunile au fost clare și ușor de urmat.</p>
+            </section>
+
+            <section>
+                <p>⭐️⭐️⭐️⭐️</p>
+                <p>Mi-a plăcut mult secțiunea cu costume pentru copii — foarte ingenioase și sigure. Ar fi fost util și un ghid video pas cu pas, dar în rest totul e excelent.</p>
+            </section>
+
+            <section>
+                <p>⭐️⭐️⭐️⭐️⭐️</p>
+                <p>Site-ul e grozav! Am făcut un costum de zombie pentru petrecerea de Halloween de la birou și toți au fost impresionați. Materialele recomandate sunt ușor de găsit.</p>
+            </section>
+
+            <section>
+                <p>⭐️⭐️⭐️⭐️</p>
+                <p>Ideile sunt originale și ușor de adaptat. Mi-ar fi plăcut să fie mai multe opțiuni pentru costume de cuplu, dar în general am fost foarte mulțumit.</p>
+            </section>
+
+            <section id="feedback">
+                <p>Adauga-ti propria recenzie mai jos!</p>
+                <textarea name="recenzie_proprie" id="recenzie" rows="10" columns="50" minlenght="10"></textarea>
+                <p>Numar de Stele</p>
+                <input type="number" name="stele" id="stele" min="1" max="5"> 
+                <button id="submit">Submit Recenzie</button>
+                <button id="lista_recenzii">Ascunde recenziile</button>
+                <button id="buton_logout">Logout</button>
+
+                <p>Recenzii lasate recent:</p>
+
+            </section>
+
+            <section id="login">
+                <p>Autentifica-te pentru a putea posta propria ta recenzie!</p>
+                <input type="text" placeholder="User Name" id="username">
+                <input type="text" placeholder="Password" id="parola">
+                <button id="buton_login">Login</button>
+            </section>
+            
+        </div>
+
+        <canvas id="bara_rating" width="300" height="20"></canvas>
+
+        <button id="culoare">Schimba culoarea barii!</button>
+
+        <footer>
+            <p>Doresti sa contribui la acest site?</p>
+            <p>Contacteaza-ne la 0789 314 142 si lasa-ti amprenta pe acest Halloween!</p>
+        </footer>
+    </body>
+
+</html>

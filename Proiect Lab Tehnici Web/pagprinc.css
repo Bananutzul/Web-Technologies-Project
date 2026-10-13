@@ -1,0 +1,381 @@
+body {
+    background-color: #393e46;
+}
+
+header {
+    background-color: #f96d00;
+    width: 100%;
+    padding-top: 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+header h2{
+    font-family: "Courier New", cursive;
+    animation-name: titlu;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#container_header{ 
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+
+header  img {
+    width: 30px;
+    height: 30px;
+    border: 1px;
+    border-radius: 10px;
+    animation-name: imagine;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 10px;
+    z-index: 200;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f96d00;
+    width: 100%;
+    height: 45px;
+    border-bottom:1px solid black;
+}
+
+nav ul li {
+    float: left;
+    font-family: "Courier New", cursive;
+    border-right: 1px solid #393e46;
+    width: 180px;
+}
+
+nav ul li:hover {
+    background-color: #393e46;
+    transition: background-color .6s;
+}
+
+nav ul > li > a:hover {
+    color: bisque;
+    transition: color .6s;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul.submeniu {
+    visibility: hidden;
+    opacity: 0;
+    width: 180px;
+    position: absolute;
+}
+
+nav ul.submeniu > li {
+    background-color: #f96d00;
+    border: 1px solid black;
+    z-index: 200;
+}
+
+nav ul.submeniu > li:hover {
+    background-color: #393e46;
+    transition: background-color .6s;
+}
+
+nav ul.meniu > li:hover > ul.submeniu {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .7s, opacity .7s;
+}
+
+#text_introductiv {
+    background-color: #f96d00;
+    height: 60px;
+    width: 70%;
+    text-align: center;
+    line-height: 1.7em;
+    transform: translateX(20%);
+    z-index: 0;
+    filter: drop-shadow(30px 10px 4px black);
+    margin-top: 40px;
+}
+
+#text_introductiv > p {
+    font-family: "Courier New", cursive;
+    font-weight: bold;
+    text-wrap: balance;
+    font-size: 16px;
+    transition: font-size 1s;
+}
+
+#text_introductiv > p:hover {
+    font-size: 18px;
+}
+
+#materiale {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#materiale > h2 {
+    text-align:center;
+    font-family: "Courier New",cursive;
+}
+
+#materiale ul {
+    list-style: none;
+}
+
+#materiale ul li {
+    font-family: "Courier New", cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    transition: font-size .8s, color .8s;
+}
+
+#materiale ul li:hover {
+    color: bisque;
+    font-size: 22px;
+}
+
+#confectionare {
+    background-color: #f96d00;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 25px;
+    filter: drop-shadow(30px 10px 4px black);
+    width: 75%;
+    transform: translateX(15%);
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+#confectionare h2{
+    font-family: "Courier New", cursive;
+    text-align: center;
+}
+
+#confectionare ol {
+    font-family: "Courier New", cursive;
+    text-align: center;
+    font-weight: bold;
+}
+
+#confectionare ol li {
+    font-size: 16px;
+    transition: font-size .8s, color .8s;
+}
+
+#confectionare ol li:hover {
+    color: bisque;
+    font-size: 18px;
+}
+
+#confectionare p {
+    font-family: "Courier New", cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size:13px;
+}
+
+#confectionare img {
+    width: 20%;
+    height: 20%;
+    margin-top: 40px;
+    transition: transform 1s;
+    filter: drop-shadow(30px 10px 4px black);
+}
+
+#confectionare img:hover {
+    transform: scale(1.15) rotate(-5deg)
+}
+
+#filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#filme h2 {
+    font-family: "Courier New", cursive;
+    color: bisque;
+}
+
+#lista_filme {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#lista_filme > a > img {
+    transition: transform 1s;
+    filter: drop-shadow(30px 10px 4px black);
+}
+
+#lista_filme > a > img:hover {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+#container_recomandare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#rezultat {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    color: bisque;
+    font-family: "Courier New", cursive;
+}
+
+a {
+    text-decoration: none;
+    color: bisque;
+}
+
+footer {
+    width: 100%;
+    background-color: #f96d00;
+    height: 90px;
+    margin-top: 100px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size:14px;
+    text-align: center;
+    font-family: "Courier New", cursive;
+    font-weight: bold;
+}
+
+footer:before {
+    content: "🎃";
+}
+
+@keyframes titlu {
+    from {transform: scale(1.0); color: black;}
+    to {transform: scale(1.08); color: bisque;}
+}
+
+@keyframes imagine {
+    from {width: 30px; height: 30px;}
+    to {width: 35px; height: 35px;}
+}
+
+@media screen and (max-width: 900px){
+    #container_header {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    header img {
+        margin: 0 auto;
+    }
+
+    nav {
+        position: sticky;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+
+    nav ul li {
+        float: none;              
+        width: 100%;             
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid #393e46;
+    }
+
+    nav ul.submeniu {
+        position: static;
+        display: none;
+        opacity: 0;
+        transform: none;
+        width: 100%;
+    }
+
+    nav ul.meniu > li:hover > ul.submeniu {
+        display: block;
+        opacity: 1;
+    }
+
+    #text_introductiv {
+        width: 90%;
+        height: 0%;
+        transform: none;       
+        margin: 20px auto;
+    }
+
+    #text_introductiv p {
+        font-size: 10px;
+        transition: font-size .8s;
+    }
+
+    #text_introductiv p:hover {
+        font-size: 12px;
+    }
+
+    #confectionare img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #confectionare p {
+        font-size: 10px;
+    }
+
+    #lista_filme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formular_recomandare {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #formular_recomandare input,
+    #formular_recomandare button {
+        width: 100%;
+    }
+}
